@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM & EVENTS</title>
+</head>
+<body>
+    <!-- click events using a button-->
+    <p id="p_one">Hello,  Welcome to DOM & EVENTS</p>
+    <button id="btn_change">Change</button>
+
+    <script>
+        const button = document.querySelector('#btn_change');
+         function changeText(event) {
+            const p = document.querySelector('#p_one');
+            // change property of the paragraph
+            p.innerText = 'The paragraph content has been changed';
+         }
+         button.addEventListener('click', changeText);
+    </script>
+</body>
+</html>
